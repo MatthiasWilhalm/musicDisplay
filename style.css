@@ -1,0 +1,80 @@
+#trackDisplay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 350px;
+    height: 85px;
+    background: rgba(141, 47, 241, 0.74);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#trackDisplay > div {
+    width: calc(350px - 80px);
+    overflow: hidden;
+}
+
+#trackDisplay h1,
+#trackDisplay h2,
+#trackDisplay h3 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#trackDisplay h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#trackTitleClone {
+    display: none;
+    margin-left: 5px !important;
+}
+
+#trackTitles {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+    width: max-content;
+}
+
+.trackDisplayMarquee {
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 5px));
+    }
+}
+
+#trackDisplay h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#trackDisplay h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#trackDisplay img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    border: 1px solid #00000000;
+    z-index: 1;
+}
