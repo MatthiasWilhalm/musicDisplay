@@ -85,7 +85,7 @@
     border: 1px solid #00000000;
     z-index: 1;
     align-self: center;
-    scale: 1.4;
+    transform: scale(1.4);
 }
 
 #imgFade {

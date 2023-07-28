@@ -8,7 +8,7 @@
     background-size: cover;
     background-repeat: repeat;
     filter: blur(20px);
-    scale: 1.3;
+    transform: scale(1.3);
 }
 
 #backgroundTheme {
